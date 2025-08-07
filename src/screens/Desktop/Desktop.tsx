@@ -139,58 +139,13 @@ export const Desktop = (): JSX.Element => {
             </Button>
           </div>
 
-          {/* Hero Images Grid - Responsive */}
-          <div className="w-full lg:w-[50%] relative h-[500px] lg:h-[850px] md:h-[500px] sm:h-[500px] xs:h-[450px] overflow-visible z-10 order-1 lg:order-2 mb-6 lg:mb-0">
-            {/* Animated HeroLine - Hidden on mobile */}
+          {/* Replace hero visuals with single provided image */}
+          <div className="w-full lg:w-[50%] flex items-center justify-center order-1 lg:order-2 mb-6 lg:mb-0">
             <img
-              src="/HeroLine.png"
-              alt="Decorative line"
-              className="absolute top-[28%] right-[-10%] w-[1000px] h-[600px] z-0 opacity-100 animate-slide-in lg:block md:hidden sm:hidden xs:hidden"
+              src="/Figma Files/Component 12.png"
+              alt="Hero Visual"
+              className="w-full max-w-[350px] rounded-[30px] shadow-lg object-cover"
             />
-            <div className="absolute right-0 flex gap-3 lg:gap-6 md:gap-4 sm:gap-3 xs:gap-2 z-10 w-full justify-center lg:justify-end">
-              {/* First Column */}
-              <div className="flex flex-col gap-3 lg:gap-6 md:gap-4 sm:gap-3 xs:gap-2 mt-[80px] lg:mt-[50px] md:mt-[80px] sm:mt-[80px] xs:mt-[70px]">
-                <div className="w-[120px] h-[172px] lg:w-[300px] lg:h-[430px] md:w-[120px] md:h-[172px] sm:w-[120px] sm:h-[172px] xs:w-[100px] xs:h-[143px] bg-gray-100 rounded-[15px] lg:rounded-[30px] md:rounded-[15px] sm:rounded-[15px] xs:rounded-[12px] overflow-hidden shadow-lg">
-                  <img
-                    src="/FirstCol(1).jpg"
-                    alt="Clinic Interior"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="w-[120px] h-[172px] lg:w-[300px] lg:h-[430px] md:w-[120px] md:h-[172px] sm:w-[120px] sm:h-[172px] xs:w-[100px] xs:h-[143px] bg-gray-100 rounded-[15px] lg:rounded-[30px] md:rounded-[15px] sm:rounded-[15px] xs:rounded-[12px] overflow-hidden shadow-lg">
-                  <img
-                    src="/FirstCol(2).jpg"
-                    alt="Clinic Consultation"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
-
-              {/* Second Column */}
-              <div className="flex flex-col gap-3 lg:gap-6 md:gap-4 sm:gap-3 xs:gap-2 -mt-[120px] lg:-mt-[465px] md:-mt-[120px] sm:-mt-[120px] xs:-mt-[100px]">
-                <div className="w-[130px] h-[172px] lg:w-[312px] lg:h-[414px] md:w-[130px] md:h-[172px] sm:w-[130px] sm:h-[172px] xs:w-[110px] xs:h-[146px] bg-gray-100 rounded-[15px] lg:rounded-[30px] md:rounded-[15px] sm:rounded-[15px] xs:rounded-[12px] overflow-hidden shadow-lg">
-                  <img
-                    src="/SecondCol(1).jpg"
-                    alt="Medical Equipment"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="w-[130px] h-[172px] lg:w-[312px] lg:h-[415px] md:w-[130px] md:h-[173px] sm:w-[130px] sm:h-[173px] xs:w-[110px] xs:h-[146px] bg-gray-100 rounded-[15px] lg:rounded-[30px] md:rounded-[15px] sm:rounded-[15px] xs:rounded-[12px] overflow-hidden shadow-lg">
-                  <img
-                    src="/SecondCol(2).jpg"
-                    alt="Clinic Reception"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="w-[130px] h-[172px] lg:w-[312px] lg:h-[414px] md:w-[130px] md:h-[172px] sm:w-[130px] sm:h-[172px] xs:w-[110px] xs:h-[146px] bg-gray-100 rounded-[15px] lg:rounded-[30px] md:rounded-[15px] sm:rounded-[15px] xs:rounded-[12px] overflow-hidden shadow-lg">
-                  <img
-                    src="/SecondCol(3).jpg"
-                    alt="Clinic Reception"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
