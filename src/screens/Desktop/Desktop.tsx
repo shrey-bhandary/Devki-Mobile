@@ -57,7 +57,7 @@ export const Desktop = (): JSX.Element => {
       <div className="bg-[#FFFFFF] w-full max-w-[1440px] relative">
         {/* Fixed Navigation - Hidden on mobile and tablet */}
         <header className="fixed top-[30px] left-0 right-0 z-50 flex justify-center lg:flex md:hidden sm:hidden xs:hidden">
-          <div className="flex w-[150px] h-[30px] items-center justify-center px-4 py-2 bg-[#F5F5F5] rounded-[50px] absolute left-16">
+          <div className="flex w-[50px] h-[10px] items-center justify-center px-4 py-2 bg-[#F5F5F5] rounded-[50px] absolute left-16">
             <img
               src="/Dr Devki Logo.png"
               alt="Dr Devki Logo"
@@ -99,11 +99,7 @@ export const Desktop = (): JSX.Element => {
 
         {/* Hero Section - Reference Layout */}
         <section className="relative flex flex-col items-center justify-start pt-8 pb-12 px-4 bg-white min-h-[90vh] overflow-visible">
-          {/* Top-left logo button */}
-          <div className="absolute top-6 left-6 z-20 flex items-center bg-[#F5F5F5] rounded-full px-4 py-2 shadow-md gap-2">
-            <img src="/Dr Devki Logo.png" alt="Dr Devki Logo" className="h-7 w-auto object-contain" />
-            <span className="font-inter font-normal text-[#2b2b2b] text-base">Dr. Devki Potwar</span>
-          </div>
+         
 
           {/* Top-right call button */}
           <button className="absolute top-6 right-6 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#984D95] to-[#D39CC0] shadow-lg hover:scale-105 transition-transform">
@@ -115,10 +111,10 @@ export const Desktop = (): JSX.Element => {
 
           {/* 2x2 Image Grid */}
           <div className="relative z-10 grid grid-cols-2 grid-rows-2 gap-3 mt-16 mb-8 w-[90vw] max-w-[340px]">
-            <img src="/FirstCol(1).jpg" alt="Clinic 1" className="rounded-[18px] object-cover w-full h-[150px] shadow-md" />
-            <img src="/FirstCol(2).jpg" alt="Clinic 2" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
-            <img src="/SecondCol(1).jpg" alt="Clinic 3" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
-            <img src="/SecondCol(2).jpg" alt="Clinic 4" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
+            <img src="/FirstCol(1).jpg" alt="Clinic 1" className="rounded-[18px] object-cover w-full h-[200px] shadow-md" />
+            <img src="/FirstCol(2).jpg" alt="Clinic 2" className="rounded-[18px] object-cover w-full h-[200px] shadow-md" />
+            <img src="/SecondCol(1).jpg" alt="Clinic 3" className="rounded-[18px] object-cover w-full h-[200px] shadow-md" />
+            <img src="/SecondCol(2).jpg" alt="Clinic 4" className="rounded-[18px] object-cover w-full h-[200px] shadow-md" />
           </div>
 
           {/* Text content with background */}
