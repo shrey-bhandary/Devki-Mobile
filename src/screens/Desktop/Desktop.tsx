@@ -117,9 +117,9 @@ export const Desktop = (): JSX.Element => {
           {/* 2x2 Image Grid */}
           <div className="relative z-10 grid grid-cols-2 grid-rows-2 gap-3 mt-16 mb-8 w-[90vw] max-w-[340px]">
             <img src="/FirstCol(1).jpg" alt="Clinic 1" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[50px]" />
-            <img src="/FirstCol(2).jpg" alt="Clinic 2" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[80px]" />
-            <img src="/SecondCol(1).jpg" alt="Clinic 3" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[-100px]" />
-            <img src="/SecondCol(2).jpg" alt="Clinic 4" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[-200px]" />
+            <img src="/FirstCol(2).jpg" alt="Clinic 2" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[120px]" />
+            <img src="/SecondCol(1).jpg" alt="Clinic 3" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[-300px]" />
+            <img src="/SecondCol(2).jpg" alt="Clinic 4" className="rounded-[18px] object-cover w-full h-[175px] shadow-md mt-[-100px]" />
           </div>
 
           {/* Text content with background */}
