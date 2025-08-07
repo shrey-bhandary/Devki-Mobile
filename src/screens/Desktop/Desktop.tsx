@@ -1,4 +1,4 @@
-import { ChevronRightIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon, PhoneIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -7,7 +7,6 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from "../../components/ui/navigation-menu";
-import { Separator } from "../../components/ui/separator";
 
   
 // Define service data for mapping
@@ -38,18 +37,6 @@ const services = [
     description:
       "Non-surgical, radiofrequency treatment for \n vaginal rejuvenation and improved intimate \n wellness.",
   },
-];
-
-// Define gallery grid items
-const galleryItems = [
-  { className: "w-[417px] h-[310px] top-[89px] left-[-53px]" },
-  { className: "w-[301px] h-[310px] top-[477px] left-[5px]" },
-  { className: "w-[322px] h-[310px] top-[89px] left-[328px]" },
-  { className: "w-[417px] h-[310px] top-[491px] left-[281px]" },
-  { className: "w-[417px] h-[310px] top-[251px] left-[614px]" },
-  { className: "w-[325px] h-[310px] top-[654px] left-[661px]" },
-  { className: "w-[417px] h-[310px] top-[54px] left-[947px]" },
-  { className: "w-[345px] h-[310px] top-[467px] left-[981px]" },
 ];
 
 // Define navigation items
@@ -110,42 +97,42 @@ export const Desktop = (): JSX.Element => {
           </Button>
         </header>
 
-        {/* Hero Section - Responsive */}
-        <section className="pt-[100px] lg:pt-[100px] md:pt-[80px] sm:pt-[60px] xs:pt-[50px] px-4 lg:px-16 md:px-8 sm:px-4 pb-20 flex flex-col lg:flex-row relative overflow-hidden">
-          {/* Large gradient spot behind image grid */}
-          <div className="absolute top-[30%] right-[-20%] w-[1100px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(211,156,192,0.3)_0%,rgba(152,77,149,0.2)_40%,transparent_80%)] blur-xl pointer-events-none lg:block md:hidden sm:hidden xs:hidden" />
-
-          <div className="w-full lg:w-[50%] flex flex-col justify-center relative mb-8 lg:mb-0 order-2 lg:order-1">
-            {/* Text gradient spots */}
-            <div className="absolute bottom-[-10%] left-[-40%] w-[900px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(211,156,192,0.3)_0%,rgba(152,77,149,0.2)_40%,transparent_100%)] blur-xl pointer-events-none lg:block md:hidden sm:hidden xs:hidden" />
-
-            <h1 className="text-[32px] lg:text-[58px] md:text-[42px] sm:text-[32px] xs:text-[28px] leading-[36px] lg:leading-[64px] md:leading-[48px] sm:leading-[36px] xs:leading-[32px] font-inter font-semibold text-[#2b2b2b] relative z-10 text-center lg:text-left">
-              Just your gyneac,
-              <br />
-              gone digital
-            </h1>
-            <p className="w-full lg:w-[559px] md:w-full sm:w-full mt-6 font-inter font-light text-[#747474] text-base leading-relaxed relative z-10 text-center lg:text-left">
-              Keep scrolling to know how I can help you.
-            </p>
-            <Button className="mt-8 w-fit pl-3 pr-1.5 py-2 relative overflow-hidden group rounded-[50px] transition-all duration-300 mx-auto lg:mx-0">
-              <div className="absolute inset-0 w-full bg-[#2B2B2B]" />
-              <div className="absolute inset-0 w-0 bg-gradient-to-r from-[rgba(152,77,149,1)] to-[rgba(211,156,192,1)] transition-all duration-300 ease-in-out group-hover:w-full" />
-              <span className="font-inter font-light text-[#F5F5F5] text-base group-hover:text-white transition-colors duration-300 relative z-10">
-                Book Appointment
-              </span>
-              <div className="p-2 bg-[#FFFFFF] group-hover:bg-white rounded-full transition-all duration-300 relative z-10 ml-[1px]">
-                <img src="/arrow.svg" alt="Frame" className="w-2.5 h-2.5" />
-              </div>
-            </Button>
+        {/* Hero Section - Reference Layout */}
+        <section className="relative flex flex-col items-center justify-start pt-8 pb-12 px-4 bg-white min-h-[90vh] overflow-visible">
+          {/* Top-left logo button */}
+          <div className="absolute top-6 left-6 z-20 flex items-center bg-[#F5F5F5] rounded-full px-4 py-2 shadow-md gap-2">
+            <img src="/Dr Devki Logo.png" alt="Dr Devki Logo" className="h-7 w-auto object-contain" />
+            <span className="font-inter font-normal text-[#2b2b2b] text-base">Dr. Devki Potwar</span>
           </div>
 
-          {/* Replace hero visuals with single provided image */}
-          <div className="w-full lg:w-[50%] flex items-center justify-center order-1 lg:order-2 mb-6 lg:mb-0">
-            <img
-              src="/Figma Files/Component 12.png"
-              alt="Hero Visual"
-              className="w-full max-w-[350px] rounded-[30px] shadow-lg object-cover"
-            />
+          {/* Top-right call button */}
+          <button className="absolute top-6 right-6 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#984D95] to-[#D39CC0] shadow-lg hover:scale-105 transition-transform">
+            <PhoneIcon className="w-6 h-6 text-white" />
+          </button>
+
+          {/* Decorative line behind images */}
+          <img src="/HeroLine.png" alt="Decorative line" className="absolute left-0 right-0 mx-auto top-24 w-[90%] max-w-[400px] opacity-80 z-0" />
+
+          {/* 2x2 Image Grid */}
+          <div className="relative z-10 grid grid-cols-2 grid-rows-2 gap-3 mt-16 mb-8 w-[90vw] max-w-[340px]">
+            <img src="/FirstCol(1).jpg" alt="Clinic 1" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
+            <img src="/FirstCol(2).jpg" alt="Clinic 2" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
+            <img src="/SecondCol(1).jpg" alt="Clinic 3" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
+            <img src="/SecondCol(2).jpg" alt="Clinic 4" className="rounded-[18px] object-cover w-full h-[110px] shadow-md" />
+          </div>
+
+          {/* Text content with background */}
+          <div className="relative z-10 flex flex-col items-center w-full max-w-[340px] px-2 py-6 rounded-[24px] bg-gradient-to-br from-[#fff] via-[#F5E6F2] to-[#F5E6F2] shadow-lg">
+            <h1 className="text-[24px] font-semibold text-[#2b2b2b] text-center leading-tight mb-2" style={{background: 'linear-gradient(90deg, rgba(152,77,149,0.12) 0%, rgba(211,156,192,0.12) 100%)', borderRadius: '12px', padding: '8px 0'}}>
+              Just your gynaec,<br />gone digital
+            </h1>
+            <p className="text-[#747474] text-sm text-center mb-4">Keep scrolling to know how I can help you.</p>
+            <Button className="w-full max-w-[220px] flex items-center justify-center gap-2 rounded-full bg-[#2B2B2B] hover:bg-gradient-to-r from-[#984D95] to-[#D39CC0] text-white font-light text-base py-2 px-4 transition-all duration-300">
+              Book Appointment
+              <span className="inline-flex items-center justify-center w-6 h-6 bg-white rounded-full ml-2">
+                <img src="/arrow.svg" alt="Arrow" className="w-3 h-3" />
+              </span>
+            </Button>
           </div>
         </section>
 
